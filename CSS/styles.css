@@ -97,13 +97,6 @@ hr {
   text-align: left;
 }
 
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-  font-size: 9;
-  text-align: right;
-} */
-
 .profile {
   width: 30%;
 }
@@ -111,6 +104,7 @@ hr {
 .intro {
   width: 30%;
   margin: auto;
+  letter-spacing: 0.03em;
 }
 
 .webdev {
@@ -120,8 +114,30 @@ hr {
   margin-bottom: 50px
 }
 
+.quote {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  padding-top: 2%;
+}
+
+#quote-design1 {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #40514e;
+  padding-bottom: 3px;
+}
+
+#quote-design2 {
+  color: #11999E
+}
+
+#quote-design3 {
+  /* text-decoration: overline; */
+  border-top: 1px solid #40514e;
+  padding-top: 3px;
+}
+
 .mobiledev {
-  width: 33.5%;
+  width: 30%;
   float: right;
   text-align: right;
   margin-left: 30px;
