@@ -102,9 +102,9 @@ hr {
 }
 
 .intro {
-  width: 30%;
+  width: 36%;
   margin: auto;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .webdev {
@@ -145,6 +145,14 @@ hr {
 
 .mobiledevspacing {
   margin-top: 100px;
+}
+
+#experience1 {
+  letter-spacing: 0.04em;
+}
+
+#experience2 {
+  letter-spacing: 0.04em;
 }
 
 .contact-me {
