@@ -7,8 +7,12 @@ body {
 
 /* Bootstrap NavBar*/
 .navbar {
-  background-color: #66bfbf;
+  /* background-color: #66bfbf; */
   padding: 0rem 1rem;
+}
+
+.navbar:hover {
+  color: rgba(93, 6, 192, 0.658);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -23,8 +27,16 @@ body {
   padding-left: 0.5rem;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
+/* .navbar-dark .navbar-nav .nav-link:hover {
   color: rgba(93, 6, 192, 0.658);
+} */
+
+a.navbar-brand:hover {
+  color: rgba(46, 2, 97, 0.658);
+}
+
+a.nav-link:hover {
+  color: rgba(46, 2, 97, 0.658);
 }
 
 h1 {
@@ -101,7 +113,7 @@ hr {
   text-decoration: underline;
 }
 
-/* .top-cloud {
+.top-cloud {
   position: absolute;
   right: 300px;
   top: 50px;
@@ -111,11 +123,7 @@ hr {
   position: absolute;
   left: 300px;
   bottom: 300px;
-} */
-
-/* .skills {
-  margin: 50px 0;
-} */
+}
 
 .skill-row {
   width: 55%;
@@ -187,8 +195,46 @@ hr {
 
 .contact-message {
   width: 30%;
-  margin: 40px auto 60px;
+  margin: 30px auto 60px;
+  margin-bottom: 5px;
 }
+
+.form-group {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* .form-control-message {
+  width: 40%;
+  height: calc(10em + 0.75rem + 2px);
+  margin: 0 auto;
+} */
+
+input#inputMessage.form-control {
+  height: calc(10em + 0.75rem + 2px);
+  width: 40%;
+  margin: 0 auto;
+}
+
+textarea.form-control {
+  height: 10rem;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 5px 10px !important;
+  margin: 30px;
+}
+
+/* .form-group-half {
+  width: 40%;
+} */
 
 .btn {
   background: #11cdd4;
