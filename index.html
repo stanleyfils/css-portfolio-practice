@@ -19,89 +19,93 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-light">
-      <a class="navbar-brand" href="#">Portfolio</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactMe">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <section>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactMe">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="top-container">
-      <img class="top-cloud" src="Images/cloud.png" alt="cloud" />
-      <h1>I'm Stanley.</h1>
-      <h2>a <span id="pro">pro</span>grammer.</h2>
-      <img class="bottom-cloud" src="Images/cloud.png" alt="cloud-image" />
-      <img
-        class="profile"
-        src="./Images/Black Man : Black Man Using Laptop A.png"
-        alt="animated desktop screen"
-      />
-    </div>
-
-    <div id="about" class="middle-container">
-      <h2>Hello</h2>
-      <p class="intro">
-        I'm a web developer. Take a look around and make yourself comfortable.
-        Check out some of my projects and reach out with any questions.
-      </p>
-    </div>
-    <hr />
-    <div id="projects" class="skills">
-      <h2>Projects</h2>
-      <div class="skill-row">
+      <div class="top-container">
+        <img class="top-cloud" src="Images/cloud.png" alt="cloud" />
+        <h1>I'm Stanley.</h1>
+        <h2>a <span id="pro">pro</span>grammer.</h2>
+        <img class="bottom-cloud" src="Images/cloud.png" alt="cloud-image" />
         <img
-          class="webdev"
-          src="./Images/1451308.png"
-          alt="cartoon-image of man and phone"
+          class="profile"
+          src="./Images/Black Man : Black Man Using Laptop A.png"
+          alt="animated desktop screen"
         />
-        <h3>Web Development</h3>
-        <p id="experience1">
-          I have experience designing, coding, and testing front-end and
-          back-end development. I specialize in front-end web development and
-          enjoy opportunities where I can work on enhancing the user experience.
+      </div>
+    </section>
+
+    <section>
+      <div id="about" class="middle-container">
+        <h2>Hello</h2>
+        <p class="intro">
+          I'm a web developer. Take a look around and make yourself comfortable.
+          Check out some of my projects and reach out with any questions.
         </p>
       </div>
-      <p class="quote">
-        <span id="quote-design1">Clean</span>.
-        <span id="quote-design2"> Simple. </span>
-        <span id="quote-design3">Modern</span>.
-      </p>
-      <div class="skill-row">
-        <img
-          class="mobiledev"
-          src="./Images/responsive web design.png"
-          alt="animated image of phone, tablet, and desktop"
-        />
-        <h3 class="mobiledevspacing">Mobile Responsive Design</h3>
-        <p id="experience2">
-          A responsive website changes the layout to offer an experience based
-          on the device being used, especially ideal for mobile viewing.
+      <hr />
+      <div id="projects" class="skills">
+        <h2>Projects</h2>
+        <div class="skill-row">
+          <img
+            class="webdev"
+            src="./Images/1451308.png"
+            alt="cartoon-image of man and phone"
+          />
+          <h3>Web Development</h3>
+          <p id="experience1">
+            I have experience designing, coding, and testing front-end and
+            back-end development. I specialize in front-end web development and
+            enjoy opportunities where I can work on enhancing the user
+            experience.
+          </p>
+        </div>
+        <p class="quote">
+          <span id="quote-design1">Clean</span>.
+          <span id="quote-design2"> Simple. </span>
+          <span id="quote-design3">Modern</span>.
         </p>
-      </div>
+        <div class="skill-row">
+          <img
+            class="mobiledev"
+            src="./Images/responsive web design.png"
+            alt="animated image of phone, tablet, and desktop"
+          />
+          <h3 class="mobiledevspacing">Mobile Responsive Design</h3>
+          <p id="experience2">
+            A responsive website changes the layout to offer an experience based
+            on the device being used, especially ideal for mobile viewing.
+          </p>
+        </div>
 
-      <!-- <div
+        <!-- <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade"
         data-ride="carousel"
@@ -136,11 +140,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div> -->
-    </div>
+      </div>
+    </section>
     <hr />
 
-    <!-- Contact Me -->
-    <div id="contactMe" class="contact-me">
+    <section id="contactMe" class="contact-me">
+      <!-- Contact Me -->
+      <!-- <div id="contactMe" class="contact-me"> -->
       <h2>Get In Touch</h2>
       <h5>I'd love to chat!</h5>
       <p class="contact-message">
@@ -180,7 +186,8 @@
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
-    </div>
+      <!-- </div> -->
+    </section>
 
     <footer>
       <a
@@ -197,7 +204,7 @@
         href="http://www.twitter.com/stashustan"
         target="_blank"
       >
-        <span style="font-size: 3rem; color: white">
+        <span class="social" style="font-size: 3rem; color: white">
           <i class="fab fa-twitter"></i>
         </span>
       </a>
