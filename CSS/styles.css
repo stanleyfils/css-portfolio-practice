@@ -24,7 +24,7 @@ body {
   padding-left: 0.1rem;
   margin-right: 0.5rem;
   padding-left: 0.5rem;
-  color: #11999e;
+  color: #40514e;
 }
 
 a.navbar-brand:hover {
@@ -36,7 +36,7 @@ a.nav-link:hover {
 }
 
 a.navbar-brand {
-  color: #11999e !important;
+  color: #40514e !important;
 }
 
 h1 {
