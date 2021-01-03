@@ -1,14 +1,55 @@
-body {
-  margin: 0;
-  text-align: center;
-  font-family: "Merriweather", serif;
-  color: #40514e;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Bootstrap NavBar*/
-.navbar {
-  padding: 0rem 1rem;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset Code */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=- */
+
+/* -=-=-=-=- NAVBAR BEGIN =-=-=-=-=-= */
 
 .navbar:hover {
   color: rgba(62, 5, 128, 0.658);
@@ -20,15 +61,8 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 0.1rem;
-  padding-left: 0.1rem;
-  margin-right: 0.5rem;
-  padding-left: 0.5rem;
+  font-family: "Montserrat", sans-serif;
   color: #5f5f5f;
-}
-
-a.navbar-brand:hover {
-  color: rgba(62, 5, 128, 0.658) !important;
 }
 
 a.nav-link:hover {
@@ -36,48 +70,29 @@ a.nav-link:hover {
 }
 
 a.navbar-brand {
+  font-family: "Montserrat", sans-serif;
   color: #4d4d4d !important;
+  margin-right: 0;
 }
 
-h1 {
-  font-size: 75px;
-  margin: 10px auto 0 auto;
-  font-family: "Sacramento", cursive;
-  color: #66bfbf;
+a.navbar-brand:hover {
+  color: rgba(62, 5, 128, 0.658) !important;
 }
 
-h2 {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #66bfbf;
-  font-weight: normal;
+.navbar.scrolled {
+  background: white;
+  transition: background 800ms;
 }
+/* -=-=-=-=- NAVBAR end =-=-=-=-=-= */
 
-h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #11999e;
-}
+/* =-=-=-=-=-=- GENERAL STYLES BEGIN -=-=-=-=-=-=-=-=-=- */
 
-h5 {
-  font-family: "Montserrat", sans-serif;
-  color: #11999e;
-}
-
-a {
-  color: #11999e;
-  font-family: "Montserrat", sans-serif;
-  margin: 10px 20px;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #eaf6f6;
-}
-
-p {
-  line-height: 2;
+body {
+  margin: 0;
+  /* text-align: center; */
+  font-family: "Merriweather", sans-serif;
+  color: #40514e;
+  overflow-x: hidden
 }
 
 hr {
@@ -87,75 +102,74 @@ hr {
   margin: 100px auto;
 }
 
-.top-container {
+h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #66bfbf;
+}
+
+.project-button {
+  font-family: "Montserrat", sans-serif;
+  border: 1.4px solid #66bfbf;
+  color: #66bfbf;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* margin: 25px 0; */
+  transition: background-color 200ms ease-in-out;
+}
+
+.project-button:hover {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #66bfbf;
+  color: white;
+  background-color: #66bfbf;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 25px 0;
+  transition: background-color color 500ms ease-in-out;
+}
+
+.img-thumbnail {
+  max-width: 50%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+/* =-=-=-=-=-=- GENERAL STYLES END -=-=-=-=-=-=-=-=-=- */
+
+/* -=-=-=-=- HEADER BEGIN=-=-=-=-=-= */
+
+#headingGroup {
   background-color: #e4f9f5;
-  position: relative;
-  padding-top: 65px;
+  text-align: center;
 }
 
-.middle-container {
-  margin-top: 50px;
+#headingGroup h1 {
+  font-size: 4rem;
+  font-family: "Sacramento", cursive;
+  color: #66bfbf;
 }
 
-.bottom-container {
-  background-color: red;
-}
 
-.top-cloud {
-  position: absolute;
-  right: 170px;
-  top: 75px;
+#headingGroup .img-fluid {
+    max-width: 60%;
+    height: auto;
 }
+/* -=-=-=-=- HEADER END=-=-=-=-=-= */
 
-.bottom-cloud {
-  position: absolute;
-  left: 150px;
-  bottom: 400px;
-}
+/* -=-=-=-=- CONTENT SECTION BEGIN =-=-=-=-=-= */
 
-#pro {
-  text-decoration: underline;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
-}
-
-.skill-row {
-  width: 55%;
-  margin: 80px auto;
-  text-align: left;
-}
-
-.profile {
-  width: 30%;
-}
-
-.intro {
-  width: 36%;
-  margin: auto;
-  letter-spacing: 0.04em;
-}
-
-.webdev {
-  width: 30%;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 50px;
-}
-
-.quote {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  padding-top: 2%;
+#contentGroup h2 {
+  text-align: center;
 }
 
 #quote-design1 {
@@ -174,99 +188,79 @@ hr {
   padding-top: 3px;
 }
 
-.mobiledev {
-  width: 30%;
-  float: right;
-  text-align: right;
-  margin-left: 30px;
+.quote {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  padding-top: 2%;
 }
 
-.mobiledevspacing {
+.content {
+  text-align: center;
+  height: 100%;
+}
+
+.content-spacing {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-#experience1 {
-  letter-spacing: 0.04em;
+div.content-bg-web {
+  background-color: #e4f9f5;
+  background: linear-gradient(90deg, white 50%, #e4f9f5 50%);
 }
 
-#experience2 {
-  letter-spacing: 0.04em;
+div.content-bg-mobile {
+  background-color: #e4f9f5;
+  background: linear-gradient(90deg, #e4f9f5 50%, white 50%);
 }
 
-.contact-me {
-  margin: 75px 0;
+.content-image {
+  background-color: white !important;
 }
 
-.contact-message {
+.blurb h2 {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.blurb p {
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.fas {
+  margin-top: 1rem!important;
+  margin-bottom: 1rem!important;
+}
+
+.img-fluid {
   width: 30%;
+}
+
+@media screen and (max-width: 992px) {
+  div.content-bg-web, div.content-bg-mobile     {
+    background:#e4f9f5;
+  }
+}
+/* -=-=-=-=- CONTENT SECTION END=-=-=-=-=-= */
+
+/*-=-=-=-=-=-= CONTACT FORM BEGIN-=-=-=-=-=-=-=- */
+.contact-message {
+  width: 75%;
   margin: 30px auto 60px;
   margin-bottom: 5px;
 }
 
-.form-group {
-  width: 40%;
-  margin: 0 auto;
-}
 
-.contact-form {
-  width: 40%;
-  margin: 0 auto;
-}
 
-/* .form-control-message {
-  width: 40%;
-  height: calc(10em + 0.75rem + 2px);
-  margin: 0 auto;
-} */
 
-input#inputMessage.form-control {
-  height: calc(10em + 0.75rem + 2px);
-  width: 40%;
-  margin: 0 auto;
-}
-
-textarea.form-control {
-  height: 10rem;
-  width: 40%;
-  margin: 0 auto;
-}
-
-.btn {
-  padding: 5px 10px !important;
-  margin: 30px;
-}
-
-.btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
-}
-
+/*-=-=-=-=-=-= CONTACT FORM END -=-=-=-=-=-=-=- */
+/*-=-=-=-=-=-= FOOTER BEGIN -=-=-=-=-=-=-=- */
 footer {
   background-color: #66bfbf;
   padding: 20px 0 5px;
+  /* text-align: center; */
 }
 
 i:hover {
@@ -283,3 +277,6 @@ a:hover {
   font-size: 0.75rem;
   padding: 10px 0;
 }
+/*-=-=-=-=-=-= FOOTER END -=-=-=-=-=-=-=- */
+
+
